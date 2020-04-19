@@ -74,10 +74,14 @@ main {
         display: inline-block;
         position: relative;
         width: 100%;
-        margin: auto;
+        text-align: center;
     }
 
     #small-container {
+        display: inline-block;
+    }
+
+    #large-container {
         display: inline-block;
     }
 
@@ -108,6 +112,6 @@ main {
         height: 250px;
         background: gray;
         margin-left: 270px;
-        margin-top: -265px;
+        margin-top: -266px;
     }
 }
