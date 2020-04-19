@@ -1,10 +1,169 @@
+* {
+    background: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    background: white;
+    margin-top:-10px;
+}
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    background: white;
+    z-index: 2;
+}
+
+h1 {
+    font: normal bold 14px 'Courier New', Courier, monospace;
+    position: fixed;
+    z-index: 2
 }
 
 nav {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    position: fixed;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    z-index: 1;
+    background: white;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    width: 99%;
+    height: 75%;
+    background-color: white;
+}
+
+#search-container {
+    padding-top: 70px;
+    background: white;
+    align-self: flex-start;
+}
+
+#input-box {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 96%;
+    background: white;
+    height: 30px;
+}
+
+#search-box {
+    flex-basis: inherit;
+    flex-grow: 1;
+    margin-right: 4px;
+    margin-left: 10px;
+    height: 18px;
+}
+
+#submit-button {
+    height: 24px;
+}
+
+#outer-container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 50%;
+}
+
+#response-news {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    border: 2px solid black;
+    margin: 1px;
+}
+
+#response-stock {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    border: 2px solid black;
+    margin: 1px;
+}
+
+#response-hacker {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    border: 2px solid black;
+    margin: 1px;
+}
+
+#response-community {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    border: 2px solid black;
+    margin: 1px;
+}
+
+@media screen and (min-width: 700px) {
+
+#search-container {
+    padding-top: 100px;
+}
+.inner-container {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    padding-top: 5px;
+}    
+
+main {
+    margin-left: 5%;
+    margin-top: 150px;  
+    width: 90%;
+    height: 85%;
+    background: gray;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 18px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    
+    #outer-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .inner-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>TechCrowdBacking > Research</title>
+    <title>TechCrowdBacking > research</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
@@ -14,18 +14,30 @@
         <a href='..'>home</a>
         <a href='../community/'>community</a>
     </nav>
-    </header>
-    <main>        
+    
         <!--Typing in this search-box will initiate a search-->
-        <div id='search-box'></div>
-        <!--This is the response section to display news-->
-        <div id='response-news'></div>
-        <!--This is the section to display stock info-->
-        <div id='response-stock'></div>
-        <!--This is the section to display forums from HackerAPI-->
-        <div id='response-hacker'></div>
-        <!--This section displays relevant community info-->
-        <div id='response-community'></div>
+        <div id='search-container'>
+            <form id='input-box'>
+                <input id='search-box' type='text'>
+                <input for='search-box' type='submit' id='submit-button'>
+            </form>
+        </div>
+    </header>
+    <main> 
+    <div id='outer-container'>
+        <div class='inner-container'>
+            <!--This is the response section to display news-->
+            <div id='response-news' class='module-container'></div>
+            <!--This is the section to display stock info-->
+            <div id='response-stock' class='module-container'></div>
+        </div>
+        <div class='inner-container'>
+            <!--This is the section to display forums from HackerAPI-->
+            <div id='response-hacker' class='module-container'></div>
+            <!--This section displays relevant community info-->
+            <div id='response-community' class='module-container'></div>
+        </div>
+    </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='main.js'></script>

@@ -10,22 +10,42 @@
 <body>
     <header>
         <h1>TechCrowdBacking.com</h1>
+        <h2>as Ghandi put it, 'you must be the change'
+            so back the companies/tech you believe in</h2>
     <nav>
         <a href='research/'>research</a>
+        <a href='login/'>login</a>
+        <a href='signup/'>signup</a>
         <a href='community/'>community</a>
     </nav>
+        <!--Typing in this search-box will lead to research page-->
+        <div id='search-container'>
+            <form id='search-box'>
+                <input type='text' id='search-bar' placeholder='Search for tech or companies'>
+                <input type='submit' for='search-bar'>
+            </form>
+        </div>
     </header>
     <main>
-        <!--Typing in this search-box will lead to research page-->
-        <div id=user-search></div>
-        <!--Clicking on an element here will lead to a search for that item in research page-->
-        <div id=user-suggestions></div>
         <!--This will contain latest news headlines with links to articles-->
-        <div id=user-headlines></div>
+        <div id='user-headlines-container'>
+            <ul id='user-headlines'></ul>
+        </div>
+        <div id='small-container'>
+        <!--Clicking on an element here will lead to a search for that item in research page-->
+        <div id='user-suggestions-container'>
+            <div id='company-suggestion'></div>
+            <div id='tech-suggestion'></div>
+        </div>
         <!--This will be an exciting, tech related photo, clicking will lead to community-->
-        <div id=user-pic></div>
+        <div id='user-pic'>
+            <img>
+        </div>
+        </div>
         <!--This will be latest community post or replies to user-->
-        <div id='user-community'></div>
+        <div id='user-community-container'>
+            <ul id='community-latest'></ul>
+        </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='main.js'></script>

@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>TechCrowdBacking > Community</h1>
+        <h1>TechCrowdBacking > community</h1>
     <nav>
         <a href='..'>home</a>
         <a href='../research/'>research</a>
@@ -17,13 +17,19 @@
     </header>
     <main>
         <!--Typing in this search-box will search community threads-->
-        <div id='community-search'></div>
-        <!--The containers below will display results of the forum-->
-        <div id='forum-container'>
-            <ul id='js-forum-results'>
-
-            </ul>
+        <div id='community-search'>
+            <form id='input-box'>
+                <input id='search-box' type='text'>
+                <input for='search-box' type='submit'>
+                <input id='new-thread' type='button' value='+'>
+            </form>
         </div>
+        <!--The containers below will display results of the forum-->
+            <ul id='js-forum-results'>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='main.js'></script>
