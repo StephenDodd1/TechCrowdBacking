@@ -18,8 +18,8 @@
         <!--Typing in this search-box will initiate a search-->
         <div id='search-container'>
             <form id='input-box'>
-                <input id='search-box' type='text'>
-                <input for='search-box' type='submit' id='submit-button'>
+                <input id='re-search-box' type='text'>
+                <input for='re-search-box' type='submit' id='submit-button'>
             </form>
         </div>
     </header>
@@ -27,19 +27,51 @@
     <div id='outer-container'>
         <div class='inner-container'>
             <!--This is the response section to display news-->
-            <div id='response-news' class='module-container'></div>
+            <div id='response-news' class='module-container'>
+                <p id='js-error-message-news'></p>
+                <ul id='js-news-list'>
+                    
+                </ul>
+
+            </div>
             <!--This is the section to display stock info-->
-            <div id='response-stock' class='module-container'></div>
+            <div id='response-stock' class='module-container'>
+                <h3 id='js-stock-header'>Your stock suggestions</h3>
+                <h5 id='js-message-error-stock'>
+                </h5>
+                <ul id='response-stock-ul'>
+                    
+                </ul>
+            </div>
         </div>
         <div class='inner-container'>
             <!--This is the section to display forums from HackerAPI-->
-            <div id='response-hacker' class='module-container'></div>
+            <div id='response-hacker' class='module-container'>
+                <p id='js-message-error-hacker'></p>
+                <ul id='hacker-response-list'>
+
+                </ul>
+            </div>
             <!--This section displays relevant community info-->
-            <div id='response-community' class='module-container'></div>
+            <div id='response-community' class='module-container'>
+                <h3>Community</h3>
+                <ul id='js-forum-results'>
+                    <li><h4>How to setup your account</h4>
+                    <h5>Use a non-serious email and password to sign-up</h5>
+                    <p>Add your information to the account and go verify your email.<br>
+                        Please comment below.
+                    </p>
+                    </li>
+                    <div id='replies-community'>
+                    <li>This is a great site! - userB</li>
+                    <li>So simple yet informative. - userA</li>
+                    </div>
+            </div>
         </div>
     </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='stockObj.js'></script>
     <script src='main.js'></script>
 </body>
 </html>

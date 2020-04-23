@@ -47,6 +47,10 @@ main {
     background-color: white;
 }
 
+h3 {
+    font: normal bold 18px 'Courier New', Courier, monospace;
+}
+
 #search-container {
     padding-top: 70px;
     background: white;
@@ -62,7 +66,7 @@ main {
     height: 30px;
 }
 
-#search-box {
+#re-search-box {
     flex-basis: inherit;
     flex-grow: 1;
     margin-right: 4px;
@@ -77,48 +81,146 @@ main {
 #outer-container {
     display: flex;
     flex-direction: column;
-    height: 1000px;
 }
 
 .inner-container {
     display: flex;
     flex-direction: column;
     width: 95%;
-    height: 50%;
 }
 
 #response-news {
     width: 100%;
-    height: 100%;
-    background: gray;
+    background: orangered;
     border: 2px solid black;
     margin: 1px;
+}
+
+#js-news-list {
+    background: orangered;
+}
+
+#js-news-list li, #js-news-list li > * {
+    background: orangered;
+}
+
+#js-error-message-news h3 {
+    background: orangered;
+    margin-top: -12px;
+    margin-left: -12px
+}
+
+#js-error-message-news {
+    padding-left: 25px;
+    background: orangered;
 }
 
 #response-stock {
     width: 100%;
-    height: 100%;
-    background: gray;
+    background: orange;
     border: 2px solid black;
     margin: 1px;
 }
 
+#js-stock-header {
+    background: orange;
+    margin-left: 8px;
+}
+
+#js-stock-header h3 {
+    background: orange;
+}
+
+#js-message-error-stock {
+    background: orange;
+}
+
+#js-message-error-stock a {
+    background: orange;
+}
+
+li a {
+    background: orange;
+}
+
+#js-suggestions, #js-suggestions > * {
+    background: orange;
+}
+
+#response-stock-ul {
+    background: orange; 
+}
+
+#response-stock-ul > li {
+    background: orange;
+}
+#js-suggestions {
+    background: orange;
+}
 #response-hacker {
     width: 100%;
-    height: 100%;
-    background: gray;
+    background: yellowgreen;
     border: 2px solid black;
     margin: 1px;
+}
+
+#response-hacker, #response-hacker > * {
+    background: yellowgreen;
+}
+
+#response-hacker li, #response-hacker li > * {
+    background: yellowgreen;
+}
+
+#hacker-response-list h3 {
+    background: yellowgreen;
+    margin-left: -25px;
+    margin-top: -12px;
 }
 
 #response-community {
     width: 100%;
-    height: 100%;
-    background: gray;
+    background: tomato;
     border: 2px solid black;
     margin: 1px;
 }
 
+#response-community h3 {
+    background: tomato;
+    margin-left: 15px;
+}
+
+#js-forum-results, #js-forum-results > * {
+    background: tomato;
+}
+
+#js-forum-results li, #js-forum-results li > * {
+    background: tomato;
+}
+
+.hidden {
+    display: none;
+}
+
+li {
+    line-height: 30px;
+}
+
+ul {
+    margin-top: -10px;
+}
+
+h3 {
+    margin-top: 4px;
+}
+
+a {
+    color: darkmagenta;
+}
+
+a:visited {
+    color: darkred;
+}
 @media screen and (min-width: 700px) {
 
 #search-container {
