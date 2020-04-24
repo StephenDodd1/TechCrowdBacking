@@ -30,7 +30,7 @@ function displayNews(responseJson) {
     for (let i = 0; i < responseJson['articles'].length; i++)
     $('#js-news-list').append(`<li><h5>${responseJson.articles[i].title}</h5>
     <p>${responseJson.articles[i].description}</p>
-    <a href='${responseJson.articles[i].url}'>Click here for full article!</a></li>`);
+    <a target='_blank' href='${responseJson.articles[i].url}'>Click here for full article!</a></li>`);
 }
 
 function formatStockQuery(symbol) {
@@ -155,22 +155,22 @@ function watchInputBox() {
 
 function suggestFunc() {
     let randInt=Math.floor(Math.random()*10);
-$('#response-stock-ul').append(`<div id='js-suggestions' class='hidden'><h4>Biopharmaceuticals</h4>
-<li>${stockObj.BIOPHARM[Object.keys(stockObj.BIOPHARM)[randInt]]}</li>
-<h4>Technology</h4>
-<li>${stockObj.TECH[Object.keys(stockObj.TECH)[randInt]]}</li>
-<h4>Healthcare</h4>
-<li>${stockObj.HEALTHCARE[Object.keys(stockObj.HEALTHCARE)[randInt]]}</li>
-<h4>Idustrial</h4>
-<li>${stockObj.INDUSTRIAL[Object.keys(stockObj.INDUSTRIAL)[randInt]]}</li>
-<h4>Education</h4>
-<li>${stockObj.EDUCATION[Object.keys(stockObj.EDUCATION)[randInt]]}</li>
-</div>`);
+$('#response-stock-ul').append(`<ul id='js-suggestions' class='hidden'><li><h4>Biopharmaceuticals</h4>
+${stockObj.BIOPHARM[Object.keys(stockObj.BIOPHARM)[randInt]]}</li>
+<li><h4>Technology</h4>
+${stockObj.TECH[Object.keys(stockObj.TECH)[randInt]]}</li>
+<li><h4>Healthcare</h4>
+${stockObj.HEALTHCARE[Object.keys(stockObj.HEALTHCARE)[randInt]]}</li>
+<li><h4>Idustrial</h4>
+${stockObj.INDUSTRIAL[Object.keys(stockObj.INDUSTRIAL)[randInt]]}</li>
+<li><h4>Education</h4>
+${stockObj.EDUCATION[Object.keys(stockObj.EDUCATION)[randInt]]}</li>
+</ul>`);
 $('#js-suggestions').toggleClass('hidden')
 }
 
 function topHeadlines() {
-    let URL = `http://newsapi.org/v2/top-headlines?language=en&q=tech&pageSize=5`;
+    let URL = `https://newsapi.org/v2/top-headlines?language=en&q=tech&pageSize=5`;
     getHeadlines(URL,newsAPI);
 }
 
