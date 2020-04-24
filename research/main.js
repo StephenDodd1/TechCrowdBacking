@@ -191,7 +191,7 @@ function displayHeadlines(responseJson) {
     for (let i = 0; i < responseJson['articles'].length; i++) {
     $('#js-news-list').append(`<li><h5>${responseJson.articles[i].title}</h5>
     <p>${responseJson.articles[i].description}</p>
-    <a href='${responseJson.articles[i].url}'>Click here for full article!</a></li>`);
+    <a target='_blank' href='${responseJson.articles[i].url}'>Click here for full article!</a></li>`);
 }
 }
 
@@ -215,7 +215,7 @@ function displayHackerLatest(responseJson) {
     for(let i = 0; i < 20; i++) {
         if (responseJson.hits[i].title !== null){
     $('#hacker-response-list').append(`<li>
-    <a href='${responseJson.hits[i].url}'>
+    <a target='_blank' href='${responseJson.hits[i].url}'>
     ${responseJson.hits[i].title}</a></li>`)
         }
     }

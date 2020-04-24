@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     min-height: 700px;
     background: white;
-    margin-top:-10px;
+    margin-top: -10px;
 }
 
 header {
@@ -180,22 +180,22 @@ li a {
 
 #response-community {
     width: 100%;
-    background: tomato;
+    background: rgb(253, 74, 43);
     border: 2px solid black;
     margin: 1px;
 }
 
 #response-community h3 {
-    background: tomato;
+    background: rgb(253, 74, 43);
     margin-left: 15px;
 }
 
 #js-forum-results, #js-forum-results > * {
-    background: tomato;
+    background: rgb(253, 74, 43);
 }
 
 #js-forum-results li, #js-forum-results li > * {
-    background: tomato;
+    background: rgb(253, 74, 43);
 }
 
 .hidden {
