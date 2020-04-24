@@ -41,7 +41,7 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 165px;
     width: 99%;
     height: 75%;
     background-color: white;
@@ -67,11 +67,10 @@ h3 {
 }
 
 #re-search-box {
-    flex-basis: inherit;
-    flex-grow: 1;
     margin-right: 4px;
-    margin-left: 10px;
+    margin-left: 3.5%;
     height: 18px;
+    width: 90%; 
 }
 
 #submit-button {
@@ -139,6 +138,10 @@ h3 {
     background: orange;
 }
 
+li {
+    background: orange;
+}
+
 li a {
     background: orange;
 }
@@ -151,7 +154,7 @@ li a {
     background: orange; 
 }
 
-#response-stock-ul > li {
+#js-suggestions li h4 {
     background: orange;
 }
 #js-suggestions {
@@ -172,9 +175,9 @@ li a {
     background: yellowgreen;
 }
 
-#hacker-response-list h3 {
+#js-message-error-hacker h3 {
     background: yellowgreen;
-    margin-left: -25px;
+    margin-left: 15px;
     margin-top: -12px;
 }
 
@@ -221,6 +224,10 @@ a {
 a:visited {
     color: darkred;
 }
+
+#search-item {
+    margin-top: 30px;
+}
 @media screen and (min-width: 700px) {
 
 #search-container {
@@ -237,7 +244,7 @@ nav {
 
 main {
     margin-left: 5%;
-    margin-top: 150px;  
+    margin-top: 165px;  
     width: 90%;
     height: 85%;
     background: gray;
@@ -253,7 +260,10 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
-    
+    main {
+        margin-top: 190px;
+    }
+
     #outer-container {
         display: flex;
         flex-direction: row;

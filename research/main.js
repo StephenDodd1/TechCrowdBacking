@@ -117,7 +117,7 @@ function getHacker(url) {
 function displayHacker(responseJson) {
     console.log(responseJson)
     $('#hacker-response-list').empty();
-    $('#hacker-response-list').html(`<h3>HackerNews Latest</h3>`);
+    $('#js-message-error-hacker').html(`<h3>HackerNews Latest</h3>`);
     for(let i = 0; i < 20; i++) {
         if (responseJson.hits[i].title !== null && 
             responseJson.hits[i].title !== undefined &&
@@ -149,6 +149,7 @@ function watchInputBox() {
     $('#input-box').submit(event => {
     event.preventDefault();
     let userSearch = $('#re-search-box').val().split(' ').join(',');
+    $('#search-item').html(`search results for: ${userSearch}`)
     getResults(userSearch);
     });
 }
@@ -211,7 +212,7 @@ fetch(url)
 })}
 
 function displayHackerLatest(responseJson) {
-    $('#hacker-response-list').html(`<h3>HackerNews Latest</h3>`);
+    $('#js-message-error-hacker').html(`<h3>HackerNews Latest</h3>`);
     for(let i = 0; i < 20; i++) {
         if (responseJson.hits[i].title !== null){
     $('#hacker-response-list').append(`<li>
