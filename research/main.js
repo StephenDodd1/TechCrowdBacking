@@ -149,7 +149,7 @@ function watchInputBox() {
     $('#input-box').submit(event => {
     event.preventDefault();
     let userSearch = $('#re-search-box').val().split(' ').join(',');
-    $('#search-item').html(`search results for: ${userSearch}`)
+    $('#search-item').html(`search results for: ${userSearch.split(',').join(' ')}`)
     getResults(userSearch);
     });
 }
