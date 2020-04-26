@@ -17,6 +17,8 @@ pertaining to technology is there, and some tech stocks are listed,
 and threads from HackerNews, a forum for discussing all things tech,
 displays latest threads relating to tech stocks. 
 
+![photo of research screen with suggestions](research-page.PNG)
+
 The goal of this site is to enable investors to make informed
 investments, and help them to identify tech stocks specifically. As
 the name implies, the secondary purpose of the site is to promote 
@@ -33,5 +35,7 @@ great ideas that require a large time and capital commitment.
 Investors play a crucial, and sometimes lucrative role in supporting
 these companies and the technologies they are bringing to fruition by
 providing the capital to see these technologies to maturity.
+
+![photo of a user search](search-result.PNG)
 
 HTML/CSS/JavaScript/jQuery
