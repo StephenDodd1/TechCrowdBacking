@@ -33,9 +33,14 @@ function displayNews(responseJson) {
     <a target='_blank' href='${responseJson.articles[i].url}'>Click here for full article!</a></li>`);
 }
 
+/*This section is to find the stock info of your search, if applicable.
+
+It utilizes the stockObj suggestions so that if someone searches for a company from the object
+then it will find it, as these may not be stock symbols.*/
+
 function formatStockQuery(symbol) {
     symbol = symbol.toUpperCase().split(',');
-    symbol = symbol[0]
+    symbol = symbol[0];
     if (stockObj.BIOPHARM[symbol] !== undefined) {
         symbol = stockObj.BIOPHARM[symbol];
         let URL = `https://cloud.iexapis.com/stable/stock/${symbol}/quote?types=quote,chart&format=json&token=pk_6fb83c4e188642e8902303f68dce3c6d`;
@@ -97,6 +102,7 @@ function displayStock(responseJson) {
     <li><a href="https://iexcloud.io">IEX Cloud</a></li>`)
 }
 
+//HackerNews API format URL and fetch
 
 function formatHackerQuery(search) {
     let URL = `https://hn.algolia.com/api/v1/search?query=${search}`
@@ -125,19 +131,12 @@ function displayHacker(responseJson) {
     $('#hacker-response-list').append(`<li>
     <a target='_blank' href='${responseJson.hits[i].url}'>
     ${responseJson.hits[i].title}</a></li>`)
-}
-}
-}
-/*
-function formatCommunityQuery(search) {
-
-    getCommunity(url)
+        }
+    }
 }
 
-function getCommunity(url) {
+//The commented out function call below is one to be implemented in future versions.
 
-}
-*/
 function getResults(searchParam) {
     formatNewsQuery(searchParam);
     formatStockQuery(searchParam);

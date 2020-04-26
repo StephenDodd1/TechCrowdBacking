@@ -38,6 +38,18 @@ nav {
     background: white;
 }
 
+@supports (-ms-accelerator:true) {
+flex { display: flex; }
+.form-control { min-width: 0; }
+    nav {
+        margin-left: 60%;
+    }
+
+    nav :nth-child(2) {
+        margin-left: 20%;
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -244,7 +256,7 @@ nav {
 
 main {
     margin-left: 5%;
-    margin-top: 165px;  
+    margin-top: 190px;  
     width: 90%;
     height: 85%;
     background: gray;
