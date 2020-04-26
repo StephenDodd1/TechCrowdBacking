@@ -121,7 +121,6 @@ function getHacker(url) {
     })}
 
 function displayHacker(responseJson) {
-    console.log(responseJson)
     $('#hacker-response-list').empty();
     $('#js-message-error-hacker').html(`<h3>HackerNews Latest</h3>`);
     for(let i = 0; i < 20; i++) {

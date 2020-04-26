@@ -3,7 +3,7 @@
 function watchSearchBox() {
     $('#search-box').click(event => {
     event.preventDefault();
-    window.location.pathname = 'TechCrowdBacking/research/';
+    window.location.pathname = 'research/';
     });
 }
 
