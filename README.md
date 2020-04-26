@@ -9,6 +9,8 @@ does an investor know what to invest in? Research of course, is the
 best means of making investing decisions. The aim of this platform is
 to enable access to multiple sources of information at once. 
 
+![](images/main-screen.png)
+
 Initially, the user is given some suggestions. These are great for
 those that really don't know what they are looking for. Headline news
 pertaining to technology is there, and some tech stocks are listed,
