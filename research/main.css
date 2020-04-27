@@ -237,6 +237,9 @@ a:visited {
     color: darkred;
 }
 
+li > .news-visited:visited {
+    color: black;
+}
 #search-item {
     margin-top: 30px;
 }

@@ -30,7 +30,7 @@ function displayNews(responseJson) {
     for (let i = 0; i < responseJson['articles'].length; i++)
     $('#js-news-list').append(`<li><h5>${responseJson.articles[i].title}</h5>
     <p>${responseJson.articles[i].description}</p>
-    <a target='_blank' href='${responseJson.articles[i].url}'>Click here for full article!</a></li>`);
+    <a class='news-visited' target='_blank' href='${responseJson.articles[i].url}'>Click here for full article!</a></li>`);
 }
 
 /*This section is to find the stock info of your search, if applicable.
@@ -190,7 +190,7 @@ function displayHeadlines(responseJson) {
     for (let i = 0; i < responseJson['articles'].length; i++) {
     $('#js-news-list').append(`<li><h5>${responseJson.articles[i].title}</h5>
     <p>${responseJson.articles[i].description}</p>
-    <a target='_blank' href='${responseJson.articles[i].url}'>Click here for full article!</a></li>`);
+    <a class='news-visited' target='_blank' href='${responseJson.articles[i].url}'>Click here for full article!</a></li>`);
 }
 }
 
